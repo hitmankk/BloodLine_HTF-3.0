@@ -1,0 +1,13 @@
+.inputWidth
+{
+    width: 35vw;
+}
+
+.register-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    margin: 0px;
+}

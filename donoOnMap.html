@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONOR MAP</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="donoOnMap.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="donoOnMap.html">Donor Near You</a></li>
+                <li><a href="#">SOS Chat</a></li>
+                <li><a href="#">Blood Bank</a></li>
+                <li><a href="#">Health News</a></li>
+                <li><a id="logout-btn" href="#"><strong>LogOut</strong></a></li>
+            </ul>
+            <h1 class="logo">BloodLine</h1>
+        </div>
+    </nav> 
+    
+
+    <!-- search and filter  -->
+    <div class="container mt-4">
+        <div class="input-group mb-3">
+            <input id="SearchBar" type="text" class="form-control" placeholder="Search Record" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <select class="custom-select" id="CategorySelected">
+                    <option selected value="1">Street</option>
+                    <option value="2">District</option>
+                    <option value="3">State</option>
+                    
+                </select>
+            <button class="btn btn-danger" type="button" id="SearchBtn">Search</button>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+    <!--******************** map******************** -->
+
+        
+    <div id="map">
+
+    </div>
+
+    <!-- <script>
+
+        let map;
+
+        function initMap(){
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: new google.maps.LatLng(20.5937, 78.9629),
+            zoom: 7,
+        });
+
+
+
+
+
+        const contentString = "Hello this side Vansh! Contact me for donating or urgent need of AB+ Bllod group (Contact no. - 7004****88)";
+
+        const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        ariaLabel: "Donor Details",
+        });
+
+
+        addMarker( new google.maps.LatLng(21.1458, 79.0882) , "Raju Rastogi (A +ve)");
+        addMarker( new google.maps.LatLng(23.7897304, 86.42641119999999), "Rancho Das ChanChad (AB +ve)"), "";
+        addMarker( new google.maps.LatLng(23.7846737
+        ,  86.4224551), "Rancho Das ChanChad (AB +ve)"), "";
+        addMarker( new google.maps.LatLng(23.7880937, 86.418098), "Rancho Das ChanChad (AB +ve)"), "";
+        addMarker( new google.maps.LatLng(23.742628, 86.4111374), "Rancho Das ChanChad (AB +ve)"), "";
+        addMarker( new google.maps.LatLng(23.7960378,  86.3973623), "Rancho Das ChanChad (AB +ve)"), "";
+
+
+        function addMarker(coords, name){
+        const marker = new google.maps.Marker({
+            position:coords,
+            icon:'marker.png',
+            title: name,
+            map: map,
+
+        })
+
+        marker.addListener("click", () => {
+        infowindow.open({
+            anchor: marker,
+            map,
+        });
+        });
+
+        }   
+        
+
+
+
+        };
+
+
+    </script> -->
+
+    <!-- ************************************************ -->
+
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XT_k8rE38c6afdxXisdkn7nEOV2KoEs&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+
+
+    <div class="getDataAccess">
+        <h1>Click the Button Below to Register / Login as Hostipal and Access the mapped data as per Requirment! </h1>
+        <br>
+        <span class="signuphospi"><a href="hospitalSignUp.html"> Register / Login Here</a></span>
+    </div> 
+
+    <script src="donoOnMap.js"></script>
+    
+</body>
+</html>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut  } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+    import { getDatabase,set, ref, update } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+  
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDWrDzbCh-0gz1wWByT-IzHI_ZrdYvvrBw",
+      authDomain: "khoon-do.firebaseapp.com",
+      projectId: "khoon-do",
+      storageBucket: "khoon-do.appspot.com",
+      messagingSenderId: "358776076896",
+      appId: "1:358776076896:web:0ef34e78f52e2a99ece105"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getDatabase(app);
+  
+  
+    const logoutButton = document.getElementById('logout-btn');
+  
+    logoutButton.addEventListener('click', (e) => {
+  
+        signOut(auth).then(() => {
+          alert("User Logged Out")
+          window.location = 'login.html';
+        }).catch((error) => {
+          alert(error);
+        });
+            
+    });
+  
+  </script> 

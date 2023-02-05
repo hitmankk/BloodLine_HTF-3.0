@@ -1,0 +1,324 @@
+var data1 = 
+    
+         [{
+                "id": 1,
+                "name": "Acharya Anandrishiji Blood Centre, Pune",
+                "address": "191/192, Sadashiv Peth, S.M.Joshi Foundation Bldg. Near Patrakar Bhavan, Pune, Dist. Pune",
+                "contact": "8554909040,020-24537627",
+                "email": "aapunebloodbank@gmail.com",
+                "category": "Charitable",
+                "District": "Pune",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 2,
+                "name": "M/S Pimpri Chinchwad Blood Centre",
+                "address": "Mhada commercial complex,2nd floor above dakshin hotelSant Tukaram Nagar, Pimpri,, Pimpri, Pune, Maharashtra",
+                "contact": "7559419137",
+                "email": "bloodbankpc@gmail.com",
+                "category": "Charitable",
+                "District": "Pune",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 3,
+                "name": "Chakan Blood Centre",
+                "address": "Sr. No. 4976/1/2 Gate No.2401, Yashwantnagar Ambethan Road. A/P Chakan, Tal.khed,, Pune, Pune, Maharashtra",
+                "contact": "9975564130,9021868968",
+                "email": "bloodbankchakan@gmail.com",
+                "category": "Charitable",
+                "District": "Pune",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 4,
+                "name": "Sasoon Blood Centre Pune",
+                "address": "Ground Floor,Section 5, Opp.Ambedkar Chawk,Station Rd,, Pune, Pune, Maharashtra",
+                "contact": "9423575986, 020-26128000",
+                "email": "bjmc.bloodbank@gmail.com",
+                "category": "Government",
+                "District": "Pune",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 5,
+                "name": "Padmashree Dr.D.Y Patil (Vishweshwar) Blood Centre",
+                "address": "Padmashree, Dr. Dy. Patil Medical College Hospital , Sant Tukaram Nagar, Pimpari,, Pune, Pune, Maharashtra",
+                "contact": "9561792418,020-27423844",
+                "email": "vishweshwar.vbb@rediffmail.com",
+                "category": "Charitable",
+                "District": "Pune",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 6,
+                "name": "Muktai Blood Centre of Shivpooja Bahuudeshiya Shikhan Prasarak Mandal Solapur",
+                "address": "Muktai Blood Centre of Shivpooja Bahuudeshiya Shikhan Prasarak Mandal Solapur",
+                "contact": "9422341380",
+                "email": "muktaibloodcenter@gmail.com",
+                "category": "Charitable",
+                "District": "solapur",
+                "City": "Pune",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 7,
+                "name": "Blood Bank, Max Super Specialty Hospital, (A Unit Of Balaji Medical & Disgnostic Research Centre)",
+                "address": "108-A, Indraprastha Extension, Opposite Sanchar Apartment, Delhi, Dist. East",
+                "contact": "9911866565",
+                "email": "bloodbank.ppg@maxhealthcare.com",
+                "category": "Private",
+                "District": "East Delhi",
+                "City": "New Delhi",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 8,
+                "name": "Blood Centre Dr Hedgewar Arogya Sansthan",
+                "address": "Karkardooma, Delhi, Dist. East",
+                "contact": "22309407",
+                "email": "msdhas2010@gmail.com",
+                "category": "Government",
+                "District": "East Delhi",
+                "City": "New Delhi",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 9,
+                "name": "Blood Centre, Northern Railway Central Hospital",
+                "address": "Basant Lane, New Delhi, Dist. New Delhi",
+                "contact": "23747989",
+                "email": "null",
+                "category": "Government",
+                "District": "New Delhi",
+                "City": "New Delhi",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 10,
+                "name": "Blood Centre Tarak Hospital India Pvt Ltd",
+                "address": "C-7,Jai Bharat Enclave,Dwarka, Metro Pillar no 789, Delhi, Dist. New Delhi",
+                "contact": "8929759009",
+                "email": "tarakbloodbank@gmail.com",
+                "category": "Private",
+                "District": "New Delhi",
+                "City": "New Delhi",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            }, {
+                "id": 11,
+                "name": "Kurukshetra Blood Centre",
+                "address": "SCO- 55-56, Sector- 17,Kurukshetra (Thanesar), Kurukshetra, Dist. Kurukshetra",
+                "contact": "09896038302",
+                "email": "kbloodbankk@gmail.com",
+                "category": "Private",
+                "District": "Kurukshetra",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 12,
+                "name": "Adesh Medical College And Hospital",
+                "address": "NH-1, Near Ambala Cantt., Vill.- Mohri, Tehsil - Shahbad, Kurushetra, Dist. Kurukshetra",
+                "contact": "0171-2700000, 9315859166, 7003900381",
+                "email": "adeshbloodbank@gmail.com",
+                "category": "Private",
+                "District": "Kurukshetra",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 13,
+                "name": "Blood Centre Kesho Ram Narati Devi Lehs",
+                "address": "AH-1, NH-44, Near Maruti Show Room, Shahabad M, Shahabab Markanda, Dist. Kurukshetra",
+                "contact": "9467117771",
+                "email": "drbhaskargupta30@gmail.com",
+                "category": "Charitable",
+                "District": "Kurukshetra",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 14,
+                "name": "Artemis Medicare Services Ltd.",
+                "address": "Sector-51, , Gurgaon, Dist. Gurgaon",
+                "contact": "09716122245 0124-6767999, 09716122284",
+                "email": "anilkpl@artemishealthsciences.com",
+                "category": "Private",
+                "District": "Gurgaon",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 15,
+                "name": "COLUMBIA ASIA BLOOD CENTRE",
+                "address": "Block-F, Gol Chakkar, Palam Vihar, Gurgaon, Dist. Gurgaon",
+                "contact": "0124-3989896, 9899673262",
+                "email": "BLOODCENTRE.PALAMVIHAR@GMAIL.COM",
+                "category": "Private",
+                "District": "Gurgaon",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 16,
+                "name": "Accord Superspeciality Hospital",
+                "address": "Blood Centre Accord Super specialty Hospital Sector 86, Budena Village, Greater Faridabad , Faridabad, Dist. Faridabad",
+                "contact": "9717086836",
+                "email": "ramaraghav26@gmail.com",
+                "category": "Private",
+                "District": "Faridabad",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 17,
+                "name": "Amrita Institute of Medical Sciences Research Centre",
+                "address": "SECTOR-88, AMRITANANDA MAYI MARG , Faridabad, Dist. Faridabad",
+                "contact": "9793649252",
+                "email": "Bloodcentre@fbd.amrita.edu",
+                "category": "Private",
+                "District": "Faridabad",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 18,
+                "name": "Asian Institute Of Medical Sciences",
+                "address": "Badkhal Flyover Road, Sector 21-A, Faridabad, Dist. Faridabad",
+                "contact": "096500-99052 098185-90047 0129-4253000",
+                "email": "uma.rani@aimsindia.co.in",
+                "category": "Private",
+                "District": "Faridabad",
+                "City": "Haryana",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 19,
+                "name": "Bhagwan Buddha Charitable Blood Centre",
+                "address": "1st Floor, Central Market Sector 2B Vasundhara, Ghaziabad, GHAZIABAD, Dist. Ghaziabad",
+                "contact": "9599813133",
+                "email": "bbcbb2016@gmail.com",
+                "category": "Charitable",
+                "District": "Ghaziabad",
+                "City": "Uttar Pradesh",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 20,
+                "name": "Blood Centre District Hospital Mmg",
+                "address": "District Hospital, Ghaziabad, Ghaziabad, Dist. Ghaziabad",
+                "contact": "9412206569, 09990552920",
+                "email": "bloodbankmmghospital@gmail.com",
+                "category": "Government",
+                "District": "Ghaziabad",
+                "City": "Uttar Pradesh",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 21,
+                "name": "Blood Centre Morden Pathology",
+                "address": "SAm96, Shastri Nagar, Ghaziabad, Dist. Ghaziabad",
+                "contact": "09818210834, 0120-2752570,08750472409",
+                "email": "modernbloodbankgzb@gmail.com",
+                "category": "Private",
+                "District": "Ghaziabad",
+                "City": "Uttar Pradesh",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 22,
+                "name": "Blood Centre District Hospital Noida",
+                "address": "Dr. B.R. Ambedkar Multi Speciality Hospital, Sector-30, Noida, Gautam Budh Nagar, Dist. Gautam Buddha Nagar",
+                "contact": "9818789357, 8587039335",
+                "email": "bbgbnagar@gmail.com",
+                "category": "Government",
+                "District": "Gautam Buddha Nagar",
+                "City": "Uttar Pradesh",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 23,
+                "name": "Blood Centre Fortis Hospital",
+                "address": "Fortis Hospitals Ltd. B-22, Sec-62, Noida, Dept.-Blood Bank, Noida, Dist. Gautam Buddha Nagar",
+                "contact": "09650788088,0120-2400222,9818640747",
+                "email": "seema.sinha@fortishealthcare.com",
+                "category": "Private",
+                "District": "Gautam Buddha Nagar",
+                "City": "Uttar Pradesh",
+                "blood_info": { "AP": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 24,
+                "name": "Blood Centre Jp Hospital",
+                "address": "J.P. Hospital, Sector-128, Noida, J.P. Nagar, Gautambudh Nagar, Dist. Gautam Buddha Nagar",
+                "contact": "9910443847",
+                "email": "prashant.pandey@jalindia.co.in",
+                "category": "Private",
+                "District": "Gautam Buddha Nagar",
+                "City": "Uttar Pradesh",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            },
+            {
+                "id": 25,
+                "name": "Ayush Blood Center",
+                "address": "EMRALD ONE , 454-4THFloor, Winward Buisness Park, Jetalpur Road, Vadodara, Gujarat-390007, Vadodara, Dist. Vadodara",
+                "contact": "9726647600",
+                "email": "ayushbloodcenter@gmail.com",
+                "category": "Charitable",
+                "District": "Vadodara",
+                "City": "Gujarat",
+                "blood_info": { "Ap": "70 units", "Am": "40 units", "Bp": "100 units", "op": "80 units" }
+            }
+    
+    
+        ];
+    
+        $('#txt-search').keyup(function(){
+            var searchField = $(this).val();
+            if(searchField === '')  {
+                $('#filter-records').html('');
+                return;
+            }
+            
+            var regex = new RegExp(searchField, "i");
+            var output = '
+<div class="row">';
+            var count = 1;
+              $.each(data, function(key, val){
+                if ((val.employee_salary.search(regex) != -1) || (val.employee_name.search(regex) != -1)) {
+                  output += '<div class="col-md-6 well">';
+                  output += '<div class="col-md-3"><img class="img-responsive" src="'+val.profile_image+'" alt="'+ val.employee_name +'"></div>';
+                  output += '<div class="col-md-7">';
+                  output += '<h5>' + val.employee_name + '</h5>';
+                  output += '' + val.employee_salary + ''
+                  output += '</div>';
+                  output += '</div>';
+                  if(count%2 == 0){
+                    output += '</div><div class="row">'
+                  }
+                  count++;
+                }
+              });
+              output += '</div>';
+              $('#filter-records').html(output);
+        });
+
+function search_place() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
